@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  box-sizing: border-box;
+  background: #191919;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.heading {
+  font-size: 3.5rem;
+  color: #fff;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.head-img {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  opacity: 0.6;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  padding: 1rem 1.2rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Menu Section */
+
+#menu {
+  height: 100%;
+  margin: 2rem;
+}
+
+.card-head {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: red;
+}
+
+.dish-name {
+  font-size: 1.8rem;
+  color: #191919;
+  margin: 1.2rem 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+.flex-item {
+  flex: 50%;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: .5rem;
+  padding: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* About Section */
+#about {
+  height: 100%;
+  margin: 0 auto;
+  background-color: #f44336;
+  color: white;
+  padding: 2.5rem;
+}
+
+.about-p {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin: 2rem 0;
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+td {
+  padding: 1.2rem 0;
+}
+
+/* Contact Section */
+
+#contact {
+  height: 100%;
+  margin: 0 auto;
+  color: #fff;
+  padding: 2.5rem;
+}
+
+.contact-p {
+  font-size: 1.4rem;
+  margin: 1.2rem 0;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5rem 0 2.5rem 0;
+}
+
+input {
+  width: 50%;
+  height: 60px;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+}
+
+input:hover {
+  box-shadow: 0px 0px 5px white;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+  margin: 1.2rem 0;
+  transition: .3s linear;
+}
+
+button:hover {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.greet {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 0px 0px 10px #000;
+}
+
+/* Footer Section */
+.find {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  line-height: 3rem;
+}
+
+
+footer>a {
+  font-size: 1.8rem;
+  color: #fff;
+  padding: .5rem;
+}
+
+footer>p {
+  font-size: 1.5rem;
+}
+
+.fa-heart {
+  color: red;
+  text-shadow: 0px 0px 10px red;
+}
+
+/* Media Queries Section */
+@media screen and (max-width: 480px){
+
+  .heading {
+    font-size: 3rem;
+    margin: 1rem 0;
+  }
+  
+  /* Nav Bar Section */
+  nav a {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  /* Menu Section */
+  #menu {
+    margin: .5rem;
+  }
+
+  .card-head {
+    font-size: 2.2rem;
+    margin: .8rem 0;
+  }
+  
+  .dish-name {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  /* About Section */
+  .about-p {
+    font-size: 1.3rem;
+  }
+  
+  table {
+    font-size: 1.3rem;
+  }
+
+  /* Contact Section */
+  .contact-p {
+    font-size: 1.2rem;
+  }
+  
+  input {
+    width: 100%;
+    font-size: 1rem;
+    padding: .8rem;
+  }
+  
+  button {
+    padding: .8rem;
+    font-size: 1rem;
+  }
+
+  .greet {
+    font-size: 1.8rem;
+  }
+
+}
