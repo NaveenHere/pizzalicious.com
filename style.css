@@ -111,6 +111,7 @@ nav a:hover {
   width: 100%;
   height: auto;
   margin: 0 auto;
+  border-radius: 20px;
 }
 
 table {
@@ -250,6 +251,10 @@ footer>p {
   
   table {
     font-size: 1.3rem;
+  }
+  
+  td {
+    padding: 1.2rem .4rem;
   }
 
   /* Contact Section */
